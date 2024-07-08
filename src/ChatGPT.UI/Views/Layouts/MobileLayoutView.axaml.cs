@@ -13,21 +13,21 @@ public partial class MobileLayoutView : UserControl
     {
         InitializeComponent();
 
-        ClippyImage.PointerPressed += (_, e) =>
-        {
-            if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed)
-            {
-                MoveDrag(e);
-            }
-        };
+        //ClippyImage.PointerPressed += (_, e) =>
+        //{
+        //    if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed)
+        //    {
+        //        MoveDrag(e);
+        //    }
+        //};
 
-        ClippyImage.PointerReleased += (_, e) =>
-        {
-            if (_draggingWindow)
-            {
-                EndDrag(e);
-            }
-        };
+        //ClippyImage.PointerReleased += (_, e) =>
+        //{
+        //    if (_draggingWindow)
+        //    {
+        //        EndDrag(e);
+        //    }
+        //};
     }
 
     private void MoveDrag(PointerPressedEventArgs e)

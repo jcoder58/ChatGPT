@@ -128,6 +128,8 @@ public partial class App : Application
 
     private void SetTheme()
     {
+        RequestedThemeVariant = ThemeVariant.Dark;
+
         if (_mainViewModel?.Theme is { } theme)
         {
             switch (theme)
@@ -136,6 +138,9 @@ public partial class App : Application
                     RequestedThemeVariant = ThemeVariant.Light;
                     break;
                 case "Dark":
+                    RequestedThemeVariant = ThemeVariant.Dark;
+                    break;
+                default:
                     RequestedThemeVariant = ThemeVariant.Dark;
                     break;
             }

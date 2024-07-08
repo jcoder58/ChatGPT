@@ -95,12 +95,12 @@
     <views:MainViewActionsView Grid.Column="0"
                                Grid.Row="1" />
 
-    <Image Grid.Column="1"
+    <!--<Image Grid.Column="1"
            Grid.Row="1"
            Name="ClippyImage"
            Height="100"
            Margin="-32,2,0,0"
-           Source="/Assets/clipart855284.png"/>
+           Source="/Assets/clipart855284.png"/>-->
 
   </Grid>
 
